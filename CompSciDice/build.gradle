@@ -9,6 +9,9 @@ repositories {
 jar {
     baseName = 'dice'
     version = '0.1.0'
+    manifest {
+    	     attributes 'Main-Class': 'Main'
+    }
 }
 
 mainClassName = 'Main'
