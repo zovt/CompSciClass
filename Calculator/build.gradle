@@ -7,7 +7,7 @@ repositories {
 }
 
 jar {
-    baseName = 'dice'
+    baseName = 'Calculator'
     version = '0.1.0'
     manifest {
     	     attributes 'Main-Class': 'Main'

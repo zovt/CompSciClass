@@ -7,11 +7,11 @@ repositories {
 }
 
 jar {
-    baseName = 'dice'
+    baseName = 'guess'
     version = '0.1.0'
     manifest {
-    	     attributes 'Main-Class': 'Main'
+    	     attributes 'Main-Class': 'main'
     }
 }
 
-mainClassName = 'Main'
+mainClassName = 'main'
