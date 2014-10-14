@@ -7,11 +7,11 @@ repositories {
 }
 
 jar {
-    baseName = 'dice'
+    baseName = 'lab1'
     version = '0.1.0'
     manifest {
-    	     attributes 'Main-Class': 'PlusTest'
+    	     attributes 'Main-Class': 'StudentGrades'
     }
 }
 
-mainClassName = 'PlusTest'
+mainClassName = 'StudentGrades'
