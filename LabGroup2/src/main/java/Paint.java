@@ -9,6 +9,8 @@ public class Paint {
         double totalSqFt;
         //declare double paintNeeded
         double paintNeeded;
+        //Number of doors and windows
+        int numDoors, numWindows;
         //declare and initialize Scanner object
         Scanner input = new Scanner(System.in);
         
@@ -21,11 +23,16 @@ public class Paint {
         //Prompt for and read in the height of the room
         System.out.print("Input height of room: ");
         height = input.nextInt();
+        // Check for doors and windows
+        System.out.print("How many doors: ");
+        numDoors = input.nextInt();
+        System.out.print("How many windows: ");
+        numWindows = input.nextInt();
         //Compute the total square feet to be painted--think
         //about the dimensions of each wall
-        totalSqFt = height*length*2 + height*width*2;
+        totalSqFt = height*length*2 + height*width*2-numDoors*20-numWindows*15;
         //Compute the amount of paint needed
-        paintNeeded = totalSqFt/COVERAGE;
+        paintNeeded = (totalSqFt)/COVERAGE;
         //Print the length, width, and height of the room and the
         //number of gallons of paint needed
         System.out.println("The width of the room is: " + width + " feet");

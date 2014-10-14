@@ -10,8 +10,8 @@ jar {
     baseName = 'lab2'
     version = '0.1.0'
     manifest {
-    	     attributes 'Main-Class': 'Paint'
+    	     attributes 'Main-Class': 'BaseConvert'
     }
 }
 
-mainClassName = 'Paint'
+mainClassName = 'BaseConvert'
