@@ -26,7 +26,7 @@
 
 * 2
   #+BEGIN_SRC java
-    if (gpa > 3.5) {
+    if (gpa >= 3.5) {
         System.out.println("Congratulations! You're on the dean's list.");
     } else {
         System.out.println("Try harder next time.");
