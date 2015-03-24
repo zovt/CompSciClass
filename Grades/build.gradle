@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+	     mavenLocal()
+	     mavenCentral()
+}
+
+jar {
+    baseName = 'guess'
+    version = '0.1.0'
+    manifest {
+    	     attributes 'Main-Class': 'Grades'
+    }
+}
+
+mainClassName = 'Grades'

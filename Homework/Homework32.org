@@ -1,0 +1,106 @@
+* Self-Review
+** 12 
+   An infinite loop is a statement that never ends due to the body never causing the condition to become false.
+** 13 
+   A for loop is generally used when you know the number of iterations we need, while a while loop is used when we don't.
+* True/False
+** 7 
+   F
+** 8 
+   T
+** 9 
+   F
+* Short Answer
+** 7 
+   2
+   4
+   6
+   8
+   10
+   12
+** 8 
+   It counts evenly from 0-200
+** 9 
+   It counts down from 199-1
+** 10 
+   #+BEGIN_SRC java
+     for (int num = 1; num < 20; num++) {
+         System.out.println(num);
+     }
+   #+END_SRC
+** 11 
+   The loop is infinite.
+** 12 
+   Five
+** 13 
+   #+BEGIN_SRC java
+     for (int num = 1; num < 20; num++) {
+         System.out.println(num);
+     }
+   #+END_SRC
+** 14 
+   #+BEGIN_SRC java
+     for (int num = 1; num < 20; num++) {
+         System.out.println (num);
+     }
+   #+END_SRC
+   
+** 15 
+   #+BEGIN_SRC java
+     for (int value = 1; value <= 99; value +=2)
+         System.out.println (value);
+   #+END_SRC
+** 16 
+   #+BEGIN_SRC java
+     for (int value = 1; value <= 99; value +=2)
+         System.out.println (value);
+   #+END_SRC
+** 17 
+   #+BEGIN_SRC java
+     for (Month m : Month.values())
+         System.out.println (m);
+   #+END_SRC
+** 18 
+   #+BEGIN_SRC java
+     int max, number;
+     System.out.print ("Enter an integer: ");
+     max = scan.nextInt();
+     for (int count = 2; count <= 10; count++)
+         {
+             System.out.print ("Enter another integer: ");
+             number = scan.nextInt();
+             if (number > max)
+                 max = number;
+         }
+     System.out.println ("The highest value is :" + max);
+   #+END_SRC
+** 19 
+   #+BEGIN_SRC java
+     int count = 0;
+     for (int position = 0; position < name.length(); position++)
+         if (name.charAt(position) == 'a')
+             count++;
+     System.out.println ("The character \'a\' appears "
+                         + count + " time(s)");
+   #+END_SRC
+** 20 
+   #+BEGIN_SRC java
+     for (int position = str.length()-1; position >= 0; position--)
+         System.out.print (str.charAt(position));
+     System.out.println();
+   #+END_SRC
+** 21
+   #+BEGIN_SRC java
+     for (int position = 0; position < word.length(); position +=2)
+         System.out.println(word.charAt(position));
+   #+END_SRC
+   
+* AP Style Multiple Choice
+** 1 
+   D
+** 3 
+   A
+** 4 
+   E
+** 5 
+   D
