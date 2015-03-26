@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+task runTask(type: JavaExec) {
+     main = "TestAccounts1"
+     classpath = sourceSets.main.runtimeClasspath
+     standardInput = System.in
+}
+
+defaultTasks 'runTask'
+
+repositories {
+	     mavenLocal()
+	     mavenCentral()
+}
+
+jar {
+    baseName = 'CreatingAccounts'
+    version = '0.1.0'
+    manifest {
+    	     attributes 'Main-Class': 'TestAccounts1'
+    }
+}
+
+mainClassName = 'TestAccounts1'
